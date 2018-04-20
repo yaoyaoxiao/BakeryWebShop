@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Order Now";
+}
+
+<script type="text/javascript">
+   function addToCart() {
+        var x = document.getElementById("shoppingCart");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } 
+    }
+</script>
+<h2 style="text-align: center">Welcome to <strong>Big Panda Bakery</strong>'s online store&nbsp;</h2>
+<div>
+    <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Shop Header Content" data-type="block-field" data-updated-on="1515488774981" id="page-header-57f80a35ff7c5085cbd11aa8">
+        <div class="row sqs-row">
+            <div class="col sqs-col-12 span-12">
+                <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-df0d3bde2d8b8f6d4f78">
+                    <div class="sqs-block-content">
+                        <p style="text-align: center; color:#808080;">*Please allow 24 hours for order to be processed for pick up</p>
+                        <p style="text-align: center; color:#808080;">More Products Coming Soon</p>
+                    </div></div></div></div></div>
+    <div id="productNav"><a href="/Home/Order/" style="top: 20px; color: #c03a30;font-family: proxima-nova; font-size: 18px; font-weight: 240; font-style: normal; letter-spacing: 1.75px; text-transform: none; line-height: .9em;">
+        <span class="back-arrow">←</span> BACK TO SHOP</a>
+    </div>
+</div>
+
+<div style="position: relative; top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 1196px; margin: 0 auto;">
+
+    <div data-type="image" style="opacity: 1; z-index: 889; overflow: hidden; margin-right: 40px;">
+        <img alt="pineapple.jpg" src="~/images/cakePinkPanda.png" style="font-size: 0px; left: 0px; top: 10px; width: 335px; height: 335px; position: relative; -o-object-fit: cover; object-fit: cover;" data-image-resolution="500w">
+        <div class=""></div>
+    </div>
+    <div style="position: relative; top:20px; display: block;">
+        <h1 style="font-family: proxima-nova; font-size: 38px; font-weight: 100; font-style: normal; letter-spacing: 1.75px; text-transform: none; line-height: .9em;" data-content-field="title">Pink Panda Cheese Cake （7.5"）</h1>
+        <div style="margin-top: 1em; margin-bottom: 1em; font-size: 24px; line-height: 1.5em;">
+            <span>$</span><span>39.29</span>
+        </div>
+        <div style="width: 660px; height: 280px;" data-original-label="Add To Cart" id="bpb_3_17_2_1_1524107539735_116">
+            <button id ="addToCartButton" onclick="addToCart()" type="submit" style="position: relative; top: 20px; width: 160px; height: 40px; color: #fff; background-color: #272727; border-color: #272727;">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+
+<div style="display: none; position: fixed; float: right; top: 100px; right: 11px; z-index: 15000;" id="shoppingCart">
+    <div id="shoppingCartInner" style="font-style: normal; font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal; font-weight: 400;font-stretch: normal;font-size: 12px;line-height: 22px;font-family:Helvetica, Arial, sans-serif;letter-spacing: normal; visibility: visible;">
+        <a href="/Home/Order/">
+            <div id="yui_3_17_2_1_1524120769372_117" style="color: #ddd;background-color: #111; background-image: linear-gradient(#1e1e1e,#040404);min-width: 220px;border-radius: 30px;height: 48px;cursor: pointer;white-space: nowrap;line-height: 12px;font-size: 14px;padding: 10px 15px;padding-top: 13px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;" data-test="continue-to-cart">
+              <img src="~/images/iconShoppingCart.png" style="height: 24px; width: 24px; display: inline-block; margin-right: 15px; position: relative; margin-right: 10px; margin-left: 5px;">
+              <span class="total-quantity">1</span>
+              <span class="suffix">item</span>
+              <span style="position: relative; left: 40px">$39.29</span>
+            </div>
+        </a>
+    </div>
+</div>
